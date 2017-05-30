@@ -1,4 +1,4 @@
-# Taking the Tweets of X tech thought leaders to predict the NASDAQ-100 Technology Sector Index (NDXT) 
+# Taking the Tweets of 30 tech thought leaders to predict the NASDAQ-100 Technology Sector Index (NDXT) 
 
 
 ## Outline
