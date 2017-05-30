@@ -11,6 +11,9 @@ from lib.helper_system import suppress_warnings
 rcParams['font.family'] = 'Droid Sans'
 
 #__all__ makes these names available in Jupyter notebook:
-__all__ = [
+__all__ = ['np',
+           'pd',
+           'plt',
+           'sns',
            'suppress_warnings',
           ] 
