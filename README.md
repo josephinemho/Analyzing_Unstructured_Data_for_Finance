@@ -9,4 +9,4 @@ The following projects serve to showcase my skills and understanding of Machine 
 <br>PostgreSQL | Pipelines | GridSearch | SelectKBest | SelectFromModel | PCA | LogisticRegression | Trees
 * **Predicting the Categories of New Wikipedia Articles**
 
-* **More projects coming soon...**
+* More projects coming soon...
