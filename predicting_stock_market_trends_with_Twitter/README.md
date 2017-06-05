@@ -1,49 +1,44 @@
-# Taking the Tweets of 30 tech thought leaders to predict the NASDAQ-100 Technology Sector Index (NDXT) 
+# Taking the Tweets of 30 thought leaders to predict the NASDAQ-100 Technology Sector Index (NDXT) 
 
 
 ## Outline
 
 * There are many articles on Tweets predicting/reflecting stock market:
-    * A famous study tied 6 dimensions of "mood" (based on GPOMS) to the stock market. Their mood dimension were: Calm, Alert, Sure, Vital, Kind and Happy. But their training set was made up of 9 months of data, which then predicted one month of actual data. Other studies had just good/bad/neutral. Most studies used past stock prices to predict future stock prices, but recently there's been a surge on using Sentiment Analysis. 
+    * A famous study tied 6 dimensions of "mood" (based on GPOMS) to the stock market. Their mood dimension were: Calm, Alert, Sure, Vital, Kind and Happy. But their training set was made up of 9 months of data, which then predicted one month of actual data. Other studies had just good/bad/neutral. Most studies used past stock prices to predict future stock prices, but recently there's been a surge on using Sentiment Analysis. But I want to let the machine do all the work. 
 
-<b>WHY STOCKS?</b>
+**WHY STOCKS?**
 Major financial firms like JP Morgan, Goldman Sachs, Morgan Stanley, CitiGroup hire quantitative traders for years to build predictive models on past market data. It is not totally random and can be predicted by: sentiment analysis, past prices, sales growth and dividends. About 70% of all orders on Wall Street are now placed by software, run by Machine Learning experts. 
 
 
-<b>WHY TWITTER?</b>
+**WHY TWITTER?**
 Traditionally, psychologists would formulate a hypothesis, test it by finding a subset of people, bring them to a lab, tell them to do a task and record the results.
 
 Fast forward: Twitter is a freely available psychology tool, where people around the world post thousands of reactions and opinions of every second of every day. It's like one big psychological database that's constantly being updated, and we can use it to analyze millions of text snippets with the power of Machine Learning. 
 
+**OUTCOMES**
+Market opportunities happen in real time; and people who tweet about them can deliver the information faster than the news media can. Stocks are constantly changing in price, and tweets of comments and opinions can act as timely alerts.
 
-Market opportunities happen in real time; and people who tweet about them can deliver the information faster than the news media can.
+**SELECTION OF USERS**
+* Find traders with more than 1,000 followers and who posts actionable stock-alert tweets.
+* Look at his/her last tweet and make sure it was posted within the hour to ensure he/she tweets regularly and often.
+* Some sophisticated traders with automated programs are using computer algorithms that instantly capture Trump’s Twitter remarks and then immediately buy or sell the affected stocks, analysts said.
+    * *"I can't recall another president singling out companies for public comment -- certainly not on a regular basis -- but he seems to be willing to do that on an almost daily basis," he noted. "If his words have consequences and he acts on it, then investors are going to respond and I’d buckle in. There's going to be a lot of volatility in markets."*
 
-Stocks are constantly changing price and moving, and tweets of comments and opinions act as timely alerts.
-
-Follow a trader with more than 1,000 followers and who posts actionable stock-alert tweets.
-Look at his/her last tweet and make sure it was posted within the hour to ensure he/she tweets regularly and often.
-Watch the stock that was tweeted and see where the trader entered and exited. Over time you will see the power of following a precise, financially savvy expert.
-
-"I can't recall another president singling out companies for public comment -- certainly not on a regular basis -- but he seems to be willing to do that on an almost daily basis," he noted. "If his words have consequences and he acts on it, then investors are going to respond and I’d buckle in. There's going to be a lot of volatility in markets."
-
-Some sophisticated traders with automated programs are using computer algorithms that instantly capture Trump’s Twitter remarks and then immediately buy or sell the affected stocks, analysts said.
 
 ## File and Directory Organization
 
 ```
-/api - Access to Twitter API
-/logger - Logs various errors to error.log
-/mysql - Direct Mysql Database Access
-/reviews - Collects Reviews from Amazon and Walmart
-/ruby - Ruby on Rails API
-/sentiment - Analyzes Sentiment based on existing reviews
-/twitter - Collects tweets using REST and Realtime API
+/data - Directory for storing fixed data sets (twitter_users_30.csv)
 
-/data - Directory for storing fixed data sets
-/results - directory for tracking computational experiments peformed on that data
-/experiments - ?
+/ipynb - Python notebooks
+/ipynb/LSA - Unsupervised clustering of Latent Sentiment Analysis 
+/ipynb/EDA - Exploratory Data Analysis
+/ipynb/Feature_Engineering - Tracking feature engineering experiments peformed on that data
+/ipynb/Model_Selection - Tracking model selection experiments peformed on that data
+/ipynb/tweet_scraper - Collects tweets using REST and Realtime API
+
 /doc - Documents related to the project
-/src - ?
+/src - lib?
 /bin - ?
 
 main.py - Bundled Functions
