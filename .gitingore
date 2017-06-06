@@ -1,0 +1,3 @@
+s ignores all non-hidden files ending in .keys:
+**/*.keys
+
