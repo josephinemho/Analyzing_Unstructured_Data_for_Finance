@@ -1,8 +1,2 @@
-<<<<<<< HEAD
-# This ignores all non-hidden files ending in .keys:
+#This ignores all non-hidden files ending in .keys:
 **/*.keys
-
-=======
-s ignores all non-hidden files ending in .keys:
-**/*.keys
->>>>>>> 77886c5dac708422e7cbf84afcfc5d535971b809
