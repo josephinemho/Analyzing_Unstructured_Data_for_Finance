@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import pandas_datareader as pdr
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
@@ -22,7 +21,6 @@ rcParams['font.family'] = 'Droid Sans'
 __all__ = ['datetime',
            'np',
            'pd',
-           'pdr',
            'plt',
            'rcParams',
            'sns',
