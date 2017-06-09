@@ -12,7 +12,7 @@ from lib.helper_system import suppress_warnings
 from matplotlib import rcParams
 from matplotlib import style
 style.use('ggplot')
-from wordcloud import WordCloud, STOPWORDS
+from sklearn.externals import joblib
 
 
 
@@ -21,14 +21,13 @@ rcParams['font.family'] = 'Droid Sans'
 #__all__ makes these names available in Jupyter notebook:
 __all__ = ['datetime',
            'dt',
+           'joblib',
            'np',
            'pd',
            'plt',
            'rcParams',
            'sns',
-           'STOPWORDS',
            'style',
            'suppress_warnings',
            'sys',
-           'WordCloud',
           ] 

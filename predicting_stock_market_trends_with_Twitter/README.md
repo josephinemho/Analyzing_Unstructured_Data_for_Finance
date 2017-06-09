@@ -2,6 +2,17 @@
 
 
 ## Outline
+shows all the topics that were discussed, the sentiment around them, and how these two things related to stock changes?
+
+Over a 5 day period, we collected about 77,000 tweets about the Web Summit 2015 using the Twitter Streaming API and in this blog series, we're going to explore them and see what we can extract.
+Note: This is a step by step guide which contains all you need to accomplish (almost) the same results, so feel free to try it for yourself by forking the Jupyter notebook from our GitHub repository.
+
+
+
+In the first part of this series, we're going to build a 2D map of the tweets that we've collected, to get a better sense of what people talked about at a high level. We're going to try and put the similar tweets closer together on this map, and the dissimilar ones further apart.
+We'll try out a few different methods such as classical document vectors with tf-idf scoring, K-means clustering, Latent Dirichlet Allocation (LDA), averaged Word Vectors (using GloVe word embeddings), Paragraph Vectors (using gensim's doc2vec implementation) and finally Skip-Thought Vectors to group together similar tweets, and we will then use a dimensionality reduction algorithm called t-SNE to give each tweet an (x,y) co-ordinate in a 2D space, that allows us to put the tweets on a scatter plot.
+
+
 
 * There are many articles on Tweets predicting/reflecting stock market:
     * A famous study tied 6 dimensions of "mood" (based on GPOMS) to the stock market. Their mood dimension were: Calm, Alert, Sure, Vital, Kind and Happy. But their training set was made up of 9 months of data, which then predicted one month of actual data. Other studies had just good/bad/neutral. Most studies used past stock prices to predict future stock prices, but recently there's been a surge on using Sentiment Analysis. But I want to let the machine do all the work. 
