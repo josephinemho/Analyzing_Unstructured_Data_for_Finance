@@ -1,2 +1,7 @@
-# This ignores all non-hidden files ending in *keys.py:
-**/*keys.py
+__pycache__
+
+**/.ipynb_checkpoints
+**/**/*.ipynb_checkpoints
+**/**/**/*.ipynb_checkpoints
+
+*keys.py*
