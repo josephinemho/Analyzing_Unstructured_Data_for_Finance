@@ -1,12 +1,14 @@
+*.py*
+**/*.py*
+**/**/*.py*
+**/**/**/*.py*
 
-**/Untitled.ipynb
-**/*.pyc
 **/__pycache__
+
 **/.ipynb_checkpoints
-**/*solution.ipynb
-**/*solutions.ipynb
-*.ipynb_checkpoints
-*.pyc
-**/**/*keys.pyc
-**/**/*keys.py
-**/**/.git*
+**/**/*.ipynb_checkpoints
+**/**/**/*.ipynb_checkpoints
+
+**/**/*keys.py*
+
+*.git*
