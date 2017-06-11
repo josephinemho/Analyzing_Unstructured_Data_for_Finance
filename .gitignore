@@ -6,12 +6,9 @@
 
 **/**/*keys.py*
 
-**/*.pickle
-/predicting_stock_market_trends_with_Twitter/data
 predicting_stock_market_trends_with_Twitter/data
-predicting_stock_market_trends_with_Twitter/data/**
 *.pickle
 
-predicting_stock_market_trends_with_Twitter/data/X_tfidf_10000.pickle
-/predicting_stock_market_trends_with_Twitter/data/X_tfidf_10000.pickle
-**/predicting_stock_market_trends_with_Twitter/data/X_tfidf_10000.pickle
+predicting_stock_market_trends_with_Twitter/data/
+predicting_stock_market_trends_with_Twitter/data/**
+predicting_stock_market_trends_with_Twitter/data/*.pickle
