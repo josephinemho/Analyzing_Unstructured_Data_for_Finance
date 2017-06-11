@@ -12,5 +12,7 @@ predicting_stock_market_trends_with_Twitter/data
 predicting_stock_market_trends_with_Twitter/data/
 predicting_stock_market_trends_with_Twitter/data/**
 predicting_stock_market_trends_with_Twitter/data/*.pickle
+
+# Ignore these files
 data
 data/
