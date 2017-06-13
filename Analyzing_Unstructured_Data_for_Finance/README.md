@@ -138,4 +138,4 @@ MODEL STACKING
 * Success will be meastured by prediction score
 
 ## Additional Notes:
-* Entries in the notebook should be dated and relatively verbose, with links or embedded images or tables displaying the results of the experiments that you performed. In addition to describing precisely what you did, the notebook should record your observations, conclusions, and ideas for future work.
+* Entries in the notebook should be dated and relatively verbose, with links or embedded images or tables displaying the results of the experiments that you performed. In addition to describing precisely what you did, the notebook should record your observations, conclusions, and ideas for future work.# Analyzing_Unstructured_Data_for_Finance
