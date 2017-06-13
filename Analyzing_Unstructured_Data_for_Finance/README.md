@@ -36,11 +36,6 @@ Market opportunities happen in real time; and people who tweet about them can de
 ```
 
 
-## Tools
-
-The Twitter Sentiment Classifier is powered using Python and Ruby on Rails. Tweets are collected using Twitter's REST API ( TWITTER MODULE ). These tweets are then scored based on already collected reviews in the database ( REVIEWS MODULE ). The exchange between the database and Python code is handled using a Ruby on Rails REST API ( API MODULE ). Direct access to the MYSQL Server is also possible using the MYSQL MODULE. Further libraries such as NLTK are used to improve performance as well as accuracy of the analyzer.
-
-
 ## Premise
 
 * <b>Use BOTH Sentiment Analysis (text) and Engagement (replies, retweets, mentions, hashtags, etc.) to predict stocks of the new tech companies</b></br>
