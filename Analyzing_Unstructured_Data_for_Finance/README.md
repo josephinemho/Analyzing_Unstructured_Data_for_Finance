@@ -1,33 +1,23 @@
-# Taking the Tweets of 30 thought leaders to predict the NASDAQ-100 Technology Sector Index (NDXT) 
+# Analyzing Unstructured Data for Finance
+## (a.k.a. Sentiment Analysis of Twitter to predict the rise and fall of stock prices)
+
+**In this project, I took the tweets of 30 thought leaders and news outlets to predict the SP500 Index (^GSPC)**
 
 
 ## Outline
-shows all the topics that were discussed, the sentiment around them, and how these two things related to stock changes?
-
-Over a 5 day period, we collected about 77,000 tweets about the Web Summit 2015 using the Twitter Streaming API and in this blog series, we're going to explore them and see what we can extract.
-Note: This is a step by step guide which contains all you need to accomplish (almost) the same results, so feel free to try it for yourself by forking the Jupyter notebook from our GitHub repository.
-
-
-
-In the first part of this series, we're going to build a 2D map of the tweets that we've collected, to get a better sense of what people talked about at a high level. We're going to try and put the similar tweets closer together on this map, and the dissimilar ones further apart.
-We'll try out a few different methods such as classical document vectors with tf-idf scoring, K-means clustering, Latent Dirichlet Allocation (LDA), averaged Word Vectors (using GloVe word embeddings), Paragraph Vectors (using gensim's doc2vec implementation) and finally Skip-Thought Vectors to group together similar tweets, and we will then use a dimensionality reduction algorithm called t-SNE to give each tweet an (x,y) co-ordinate in a 2D space, that allows us to put the tweets on a scatter plot.
-
-
-
-* There are many articles on Tweets predicting/reflecting stock market:
-    * A famous study tied 6 dimensions of "mood" (based on GPOMS) to the stock market. Their mood dimension were: Calm, Alert, Sure, Vital, Kind and Happy. But their training set was made up of 9 months of data, which then predicted one month of actual data. Other studies had just good/bad/neutral. Most studies used past stock prices to predict future stock prices, but recently there's been a surge on using Sentiment Analysis. But I want to let the machine do all the work. 
 
 **WHY STOCKS?**
-Major financial firms like JP Morgan, Goldman Sachs, Morgan Stanley, CitiGroup hire quantitative traders for years to build predictive models on past market data. It is not totally random and can be predicted by: sentiment analysis, past prices, sales growth and dividends. About 70% of all orders on Wall Street are now placed by software, run by Machine Learning experts. 
+Major financial firms like JP Morgan, Goldman Sachs, Morgan Stanley, CitiGroup hire quantitative traders for years to build predictive models on past market data. About 70% of all orders on Wall Street are now placed by software, run by Machine Learning experts. 
+
 
 
 **WHY TWITTER?**
-Traditionally, psychologists would formulate a hypothesis, test it by finding a subset of people, bring them to a lab, tell them to do a task and record the results.
+Usually when we talk about financial data, we think pricing data. Financial analysis techniques for studying numeric, well-structured data are very mature. 
 
-Fast forward: Twitter is a freely available psychology tool, where people around the world post thousands of reactions and opinions of every second of every day. It's like one big psychological database that's constantly being updated, and we can use it to analyze millions of text snippets with the power of Machine Learning. 
+While using unstructured (a.k.a. “text”) data in finance is not a new idea (annual reports, broker research, conference call transcripts, investor relations presentations, 3rd party research, news and press releases), the area is still very green. 
 
-**OUTCOMES**
 Market opportunities happen in real time; and people who tweet about them can deliver the information faster than the news media can. Stocks are constantly changing in price, and tweets of comments and opinions can act as timely alerts.
+
 
 **SELECTION OF USERS**
 * Find traders with more than 1,000 followers and who posts actionable stock-alert tweets.
@@ -39,24 +29,10 @@ Market opportunities happen in real time; and people who tweet about them can de
 ## File and Directory Organization
 
 ```
-/data - Directory for storing fixed data sets (twitter_users_30.csv)
-
+/data - fixed data sets and pickled objects
+/doc - images
 /ipynb - Python notebooks
-/ipynb/LSA - Unsupervised clustering of Latent Sentiment Analysis 
-/ipynb/EDA - Exploratory Data Analysis
-/ipynb/Feature_Engineering - Tracking feature engineering experiments peformed on that data
-/ipynb/Model_Selection - Tracking model selection experiments peformed on that data
-/ipynb/tweet_scraper - Collects tweets using REST and Realtime API
-
-/doc - Documents related to the project
-/src - lib?
-/bin - ?
-
-main.py - Bundled Functions
-sentiment.sh - Sentiment Analyzer
-tweets.sh - Tweet Collector
-
-Organized according to: http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000424&type=printable
+/lib - source code for modules
 ```
 
 
