@@ -105,3 +105,11 @@ docker ps
 docker ps -a
 docker start nlp
 docker exec -it nlp jupyter notebook list
+git pull origin master
+git remote -v
+git remote add origin git@github.com:josephinemho/Analyzing_Unstructured_Data_for_Finance.git
+git pull origin master -f
+docker ps
+docker exec -it nlp jupyter notebook list
+tmux ls
+tmux attach -t notebook1
