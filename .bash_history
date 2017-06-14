@@ -113,7 +113,13 @@ docker ps
 docker exec -it nlp jupyter notebook list
 tmux ls
 tmux attach -t notebook1
+<<<<<<< HEAD
 tmux attach -t notebook1
 tmux new -s bignotebook
 tmux attach -t bignotebook
 docker stats
+=======
+docker stats
+tmux ls
+tmux attach -t notebook1
+>>>>>>> 478930a23f8931d02f89d1ea7bdf03e4133a21d3
