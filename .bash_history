@@ -124,3 +124,6 @@ tmux ls
 tmux attach -t notebook1
 >>>>>>> 478930a23f8931d02f89d1ea7bdf03e4133a21d3
 docker stats
+docker stats
+tmux ls
+tmux attach -t notebook1
