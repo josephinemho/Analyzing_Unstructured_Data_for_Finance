@@ -53,6 +53,10 @@ LabelEncode our y's so we can have more flexibility running it through models (e
 **Part 6 -- Model Selection**
 Using pipelines to find the best predictive model for our data.
 
+## How to Follow Along
+
+Notebooks found in the `/ipynb` folder are labeled 1-10, highlighting steps taken to complete the project, including iterations (e.g. b1). Every notebook has a step number, a brief description in the title of what to expect, and are annotated with comments describing the reasoning behind what Machine Learning methodologies were used and why. 
+
 
 ## Additional Notes:
 See full presentation at *Analyzing_Unstructured_Data_for_Finance/doc/Analyzing Unstructured Data for Finance.pptx*
