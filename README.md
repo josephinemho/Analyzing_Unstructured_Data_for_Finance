@@ -1,10 +1,10 @@
 # Analyzing Unstructured Data for Finance
-a.k.a. Sentiment Analysis of Twitter to predict the rise and fall of stock prices
+(a.k.a. Sentiment Analysis of Twitter to predict the rise and fall of stock prices)
 
 **Objective: Build an algorithm that can predict whether the S&P 500 index (^GSPC) goes up/down based on correlations with raw, unstructured text data extracted from Twitter.**
 
 
-## Outline
+## Outline 
 
 **WHY STOCKS?**<br>
 Major financial firms like JP Morgan, Goldman Sachs, Morgan Stanley, CitiGroup hire quantitative traders for years to build predictive models on past market data.<br>
