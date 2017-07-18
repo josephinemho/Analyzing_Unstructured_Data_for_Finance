@@ -1,3 +1,4 @@
 pynb/.ipynb_checkpoints
 
 /lib/*keys.py*
+/lib/__pycache__
