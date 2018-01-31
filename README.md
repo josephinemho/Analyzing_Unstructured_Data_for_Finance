@@ -56,4 +56,4 @@ Notebooks found in the `/ipynb` folder are labeled 1-10, representing steps take
 
 
 ## Additional Notes:
-A full presentation can be found at `Analyzing_Unstructured_Data_for_Finance/doc/Analyzing Unstructured Data for Finance.pptx`
+A full presentation can be found at `https://github.com/josephinemho/Analyzing_Unstructured_Data_for_Finance/blob/master/doc/Analyzing%20Unstructured%20Data%20for%20Finance.pptx`
